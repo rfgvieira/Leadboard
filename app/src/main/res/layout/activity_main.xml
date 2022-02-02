@@ -26,14 +26,16 @@
         android:src="@mipmap/ic_launcher"
         app:layout_constraintTop_toBottomOf="@+id/tv_leadboardtitle"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_leadboardlist"
+    <GridView
+        android:id="@+id/gv_leadboard"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
         android:layout_marginTop="@dimen/xlarge"
-        app:layout_constraintTop_toBottomOf="@+id/imv_leadboard"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="0dp"
+        android:numColumns="2"
+        android:padding="@dimen/small"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imv_leadboard"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

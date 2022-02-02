@@ -22,8 +22,7 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
         addPeople()
         adapter = PersonAdapter(personList,this)
-        binding.rvLeadboardlist.adapter = adapter
-        binding.rvLeadboardlist.layoutManager = LinearLayoutManager(this)
+        binding.gvLeadboard.adapter = adapter
     }
 
     private fun addPeople(){
